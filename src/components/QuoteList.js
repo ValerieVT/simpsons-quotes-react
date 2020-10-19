@@ -37,7 +37,12 @@ const quotes = [
 const QuoteList = () => (
   <div>
     {quotes.map(item => (
-      <QuoteCard quote={item.quote} image={item.image} characterFirstName={item.characterFirstName} characterLastName={item.characterLastName} />
+      <QuoteCard 
+      quote={item.quote} 
+      image={item.image} 
+      characterFirstName={item.characterFirstName} 
+      characterLastName={item.characterLastName} 
+      key={item.image} />
     ))}
   </div>
 );
